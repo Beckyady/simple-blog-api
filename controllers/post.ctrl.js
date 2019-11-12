@@ -86,6 +86,18 @@ class PostController extends BaseController {
             return super.sendError(res, err, err.message, err.status);
         }
     }
+    // async getPostsByCategory(req, res) {
+    //     try {
+    //         const category = req.params.category;
+    //         const findCategory = await User.findOne({ category }).populate('posts');
+    //         if (!findCategory) {
+    //             return super.sendError(res, null, 'Category does not exist');
+    //         }
+    //         return super.sendSuccess(res, findCategory.posts, 'Successful');
+    //     } catch (err) {
+    //         return super.sendError(res, err, err.message, err.status);
+    //     }
+    // }
 }
 
 module.exports = new PostController();

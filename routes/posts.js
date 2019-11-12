@@ -16,4 +16,7 @@ router.get('/:post_id', PostController.getSinglePostById);
 
 router.get('/author/:username', PostController.getPostsByAuthor);
 
+// router.get('/:category', PostController.getPostsByCategory);
+
+
 module.exports = router;
